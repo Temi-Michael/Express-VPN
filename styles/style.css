@@ -1,0 +1,137 @@
+:root {
+    --color-black: #000;
+    --color-brand: #da3940;
+    --color-neon: #d4e300;
+    --color-blue: #365996;
+    --color-berry: #7e0f53;
+    --color-peach: #f4a377;
+    --color-sky-20: #b6d1d0;
+    --color-midnight: #001d2f;
+    --color-white: #fff;
+    --color-grey-10: #334a59;
+    --color-grey-20: #667782;
+    --color-grey-30: #a2acb3;
+    --color-grey-40: #ccd2d5;
+    --color-grey-50: #f7f8f9;
+    --color-mint-10: #0c6753;
+    --color-mint-20: #0f866c;
+    --color-sand-20: #f0eacf;
+    --color-sand-30: #f9f8f2;
+    --color-brand-50: #fdf3f4;
+    --color-sky: #dae8e7;
+    --color-sky-30: #dae8e7;
+    --color-error-10: #7e0f53;
+    --color-error-20: #a4115e;
+    --color-error-30: #cf1369;
+    --color-error-40: #ed8db7;
+    --color-error-50: #fae4ed;
+    --color-success-10: #004d40;
+    --color-success-20: #00695c;
+    --color-success-30: #009688;
+    --color-success-40: #4db6ac;
+    --color-success-50: #c3ece8;
+    --color-warning-10: #964c1c;
+    --color-warning-20: #b5541c;
+    --color-warning-30: #fd9b3f;
+    --color-warning-40: #feb865;
+    --color-warning-50: #feedcb;
+    --color-info-10: #3156a0;
+    --color-info-20: #4465c1;
+    --color-info-30: #4d83e8;
+    --color-info-40: #74b2fb;
+    --color-info-50: #e5f1fe;
+    --color-order-green: #4ca952;
+}
+
+html {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* NAVBAR STYLES */
+
+a, li {
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    color: var(--color-black);
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bran);
+}
+
+.nav-img {
+    width: 230px;
+    height: 40px;
+}
+
+.nav-cont {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: var(--color-grey-1);
+}
+
+ul {
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0;
+    border-radius: 2px;
+    gap: 5px;
+}
+
+
+/* SECTION ONE */
+
+#sect1 {
+    display: flex;
+    height: 100vh;
+    background-color: var(--color-sand-30);
+}
+
+.hero-text {
+   flex: 0.6;
+   width: 100vw;
+}
+
+.hero-img {
+    flex: 0.4;
+    width: 100vw;
+    background-image: url(/img/section1-hero.avif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* Hero Section Button */
+.hero-btn {
+    width: 21rem;
+    height: 3rem;
+    background-color: var(--color-mint-20);
+    color: var(--color-white);
+    border-radius: 2rem;
+    border-color: transparent;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: inline;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: var(--color-neon);
+    color: var(--color-black);
+    cursor: pointer;
+}
