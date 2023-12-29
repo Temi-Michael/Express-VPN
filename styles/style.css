@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
 :root {
     --color-black: #000;
     --color-brand: #da3940;
@@ -43,11 +45,19 @@
     --color-order-green: #4ca952;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gulzar', serif;
+}
+
 html {
     font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
+}
+
+.scrolled {
+    background-color: var(--color-sky-30); /* Change this to your desired background color */
 }
 
 /* NAVBAR STYLES */
@@ -102,6 +112,31 @@ ul {
 .hero-text {
    flex: 0.6;
    width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.text-cont {
+    width: 500px;
+    height: fit-content;
+    background-color: var(--color-bran);
+}
+
+.text-cont div h1 {
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+
+.btn-div div p {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    letter-spacing: 1px;
 }
 
 .hero-img {
@@ -118,7 +153,7 @@ ul {
 /* Hero Section Button */
 .hero-btn {
     width: 21rem;
-    height: 3rem;
+    height: 4rem;
     background-color: var(--color-mint-20);
     color: var(--color-white);
     border-radius: 2rem;
@@ -127,6 +162,7 @@ ul {
     text-transform: capitalize;
     display: inline;
     font-weight: 600;
+    word-spacing: 1px;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -134,4 +170,65 @@ ul {
     background-color: var(--color-neon);
     color: var(--color-black);
     cursor: pointer;
+}
+
+
+/* SECTION TWO */
+
+.sect2_head {
+    margin-top: 100px;
+}
+
+.why_head {
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sect2_body {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    /* background-color: #009688; */
+}
+
+.img_body {
+    flex: 0.5;
+    width: 50vw;
+    height: 50vh;
+}
+
+.sect2_img {
+    background-image: url(/img/section2-devices.avif);
+    /* background-color: var(--color-error-30); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 100%;
+    margin-left: 20vw;
+    margin-top: 5vh;
+}
+
+.sect2_text {
+    flex: 0.5;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sect2_head_text {
+    width: 55%;
+    height: 100%;
+    /* background-color: var(--color-warning-10); */
+
+
+}
+
+.sect2_head_text h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
 }
