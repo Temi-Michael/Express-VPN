@@ -232,3 +232,12 @@ ul {
     font-size: 2.6rem;
     font-weight: 400;
 }
+
+.apps {
+    color: var(--color-mint-20);
+    text-transform: none;
+    border-bottom: 2px solid var(--color-mint-20);
+    /* display: inline; */
+    padding-bottom: 2px;
+    
+}
